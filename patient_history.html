@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient History</title>
+    <link rel="stylesheet" href="patient_history.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Patient History</h1>
+        <div class="patient-list">
+            <!-- Example patients; you can dynamically generate these using server-side code -->
+            <div class="patient-item" data-patient-id="1">
+                <h3>John Doe</h3>
+                <p>Last Visit: 01/01/2024</p>
+            </div>
+            <div class="patient-item" data-patient-id="2">
+                <h3>Jane Smith</h3>
+                <p>Last Visit: 01/15/2024</p>
+            </div>
+            <div class="patient-item" data-patient-id="3">
+                <h3>Michael Johnson</h3>
+                <p>Last Visit: 01/22/2024</p>
+            </div>
+        </div>
+
+        <div class="patient-details">
+            <h2>Patient Details</h2>
+            <p><strong>Name:</strong> <span id="patient-name">Select a patient</span></p>
+            <p><strong>Age:</strong> <span id="patient-age"></span></p>
+            <p><strong>Previous Visit Date:</strong> <span id="previous-visit-date"></span></p>
+            <p><strong>Next Visit Date:</strong> <span id="next-visit-date"></span></p>
+            <p><strong>Mental Problem:</strong> <span id="mental-problem"></span></p>
+            <p><strong>Medicines:</strong> <span id="medicines"></span></p>
+        </div>
+    </div>
+
+    <script src="patient_history.js"></script>
+</body>
+</html>
